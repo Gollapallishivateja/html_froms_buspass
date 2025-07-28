@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>TSRTC Bus Pass</title>
+</head>
+<body>
+    <form action="./index1.html">
+        <center>
+            <img src="https://th-i.thgim.com/public/migration_catalog/article10538854.ece/alternates/FREE_1200/13hyskm06-TSRTChy14TSRTC-emblem.jp.jpg" width="50" height="50" alt="TSRTC Logo">
+            <h2 style="color:blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h2>
+            <h3>GENERAL BUS PASS APPLICATION</h3>
+        </center>
+
+        <fieldset>
+            <legend><b>Applicant Details</b></legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="fatherName">Father's/Guardian's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br><br>
+
+            <label>Age as on:</label>
+            <input type="number" name="years" min="0" max="150" required> Year(s)
+            <input type="number" name="months" min="0" max="11" required> Month(s)
+            <input type="number" name="days" min="0" max="31" required> Day(s)
+
+            <label for="aadhaar">Aadhaar No:</label>
+            <input type="text" id="aadhaar" name="aadhaar" maxlength="12" required><br><br>
+
+            <label for="whatsapp">WhatsApp No:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+
+            <label for="email">E-mail ID:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Residential Address Details</b></legend>
+
+            <label for="Address">Applicant's Address:</label>
+            <textarea name="Address" id="Address" rows="4" required></textarea>
+
+            <label for="district">District:</label>
+            <select name="district" id="district" required>
+                <option disabled selected value="">-----select district----</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Peddapelli">Peddapelli</option>
+                <option value="Medchal">Medchal</option>
+            </select><br><br>
+
+            <label for="mandal">Mandal:</label>
+            <select name="mandal" id="mandal" required>
+                <option disabled selected value="">-----select mandal----</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Peddapelli">Peddapelli</option>
+                <option value="Medchal">Medchal</option>
+            </select>
+
+            <label for="village">Village:</label>
+            <select name="village" id="village" required>
+                <option disabled selected value="">-----select village----</option>
+                <option value="Koti">Koti</option>
+                <option value="KPHP">KPHP</option>
+                <option value="Kukatpally">Kukatpally</option>
+            </select><br><br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="tel" name="pincode" id="pincode" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Pass Type Details</b></legend>
+
+            <label for="city">City:</label>
+            <select name="city" id="city" required>
+                <option disabled selected value="">-----select city----</option>
+                <option value="Student Pass">Hyderabad</option>
+                <option value="General Ordinary Pass">Medchal</option>
+                <option value="Metro Express Pass">KPHB</option>
+                 
+            </select><br><br>
+
+            <label for="passtype">Pass Type:</label>
+            <select name="passtype" id="passtype" required>
+                <option disabled selected value="">-----select bus pass type----</option>
+                <option value="Student Pass">Student Pass</option>
+                <option value="General Ordinary Pass">General Ordinary Pass</option>
+                <option value="Metro Express Pass">Metro Express Pass</option>
+                <option value="Metro Deluxe Pass">Metro Deluxe Pass</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Mode of Payment & Pass Collection</b></legend>
+
+            <label for="paymentMode">Payment Mode:</label>
+            <select name="paymentMode" id="paymentMode" required>
+                <option disabled selected value="">-----select payment mode----</option>
+                <option value="Online">Online</option>
+                <option value="By Counter Cash">By Counter Cash</option>
+            </select><br><br>
+
+            <label for="deliveryMode">Pass Delivery Mode:</label>
+            <select name="deliveryMode" id="deliveryMode" required>
+                <option disabled selected value="">-----select delivery mode----</option>
+                <option value="Bus Stop">Bus Stop</option>
+                <option value="At Counter">At Counter</option>
+                <option value="At Institute">At Institute</option>
+            </select><br><br>
+
+            <label for="collectionCenter">Center at which you want to collect pass:</label>
+            <select name="collectionCenter" id="collectionCenter" required>
+                <option disabled selected value="">-----select collection center----</option>
+                <option value="RTC KPHB">RTC KPHB</option>
+                <option value="RTC Koti">RTC Koti</option>
+                <option value="RTC Hyderabad">RTC Hyderabad</option>
+            </select><br><br>
+        </fieldset>
+
+        <center>
+            <img src="./Screenshot 2025-07-28 151823.png" alt="captcha"><br><br>
+            <input type="text" placeholder="Enter captcha shown above" required><br><br>
+            <input type="submit" value="Submit">
+        </center>
+    </form>
+</body>
+</html>
